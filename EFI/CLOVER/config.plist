@@ -272,7 +272,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>darkwake=no dart=0 debug=0x100 keepsyms=1 -disablefxfirmware kext-dev-mode=1</string>
+		<string>darkwake=no dart=0 debug=0x100 keepsyms=1 -disablefxfirmware kext-dev-mode=1 brcmfx-driver=2 -v</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -555,6 +555,11 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>compatible</key>
+				<string>pci14e4,43a0</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -712,7 +717,6 @@
 		<key>Hide</key>
 		<array>
 			<string>/EFI/Boot/BootX64.efi</string>
-			<string>Windows</string>
 			<string>Preboot</string>
 		</array>
 		<key>Language</key>
@@ -732,11 +736,11 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>2048x1252</string>
+		<string>1920x1080</string>
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
-		<string>High Sierra</string>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
